@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "url-joiner"
+version = "1.0.0"
+description = "Resolve a relative reference against a base URL."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "seipass"}]
+
+[project.scripts]
+url-joiner = "url_joiner:main"
+
+[tool.setuptools]
+py-modules = ["url_joiner"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
